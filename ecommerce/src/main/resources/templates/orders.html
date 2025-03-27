@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Ordini</title>
+</head>
+<body>
+<h1>Ordini</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Data</th>
+        <th>Prodotti</th>
+        <th>Totale</th>
+        <th>Stato</th>
+    </tr>
+    <tr th:each="order : ${orders}">
+        <td th:text="${order.id}"></td>
+        <td th:text="${#dates.format(order.orderDate, 'dd/MM/yyyy')}"></td>
+        <td th:text="${order.productList}"></td>
+        <td th:text="${order.totalAmount} + ' €'"></td>
+        <td th:text="${order.status}"></td>
+    </tr>
+</table>
+</body>
+</html>
