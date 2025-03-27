@@ -1,4 +1,4 @@
-package com.inna.ecommerce.ecommerce;
+package com.inna.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.inna.ecommerce.ecommerce;
+package com.inna.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
